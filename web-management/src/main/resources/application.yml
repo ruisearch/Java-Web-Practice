@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Java-Web
+  #mysql连接配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/javaweb
+    username: root
+    password: 1234
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #启动驼峰命令，db字段为下划线，实体类属性名为驼峰时，前者自动映射为后者
+    map-underscore-to-camel-case: true
